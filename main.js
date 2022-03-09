@@ -10,12 +10,15 @@ const handleSearch = () => {
     fetch(url)
         .then(res => res.json())
         .then(data => displayData(data))
+
+    input.value = '';
 }
 
 
 // display data
 const displayData = (data) => {
     const container = document.querySelector(".result-area");
+    container.textContent = '';
     const resultContainer = document.createElement("div")
     resultContainer.className = "result-container text-start";
     resultContainer.innerHTML = `
