@@ -11,3 +11,6 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+.result-area{
+    background-color: rgba(212, 211, 211, 0.644);
+}
